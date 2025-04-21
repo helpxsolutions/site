@@ -12,6 +12,9 @@
       flex-direction: column;
       gap: 20px;
       margin-bottom: 60px;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding: 0 20px;
     }
 
     .produto-midias {
@@ -25,6 +28,22 @@
     .video-produto {
       flex: 1;
       min-width: 300px;
+    }
+
+    .slides {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+    }
+
+    .slide {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      scroll-snap-align: start;
+      flex-shrink: 0;
     }
 
     .video-produto iframe {
