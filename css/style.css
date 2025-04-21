@@ -2,7 +2,7 @@
   --azul: #00bfff;
   --branco: #ffffff;
   --preto: #000000;
-  --azul marinho:#004aad;
+  --azul-marinho:#004aad;
 }
 
 body {
@@ -264,7 +264,7 @@ body {
 
 
 .footer {
-      background: var(--azul marinho);
+      background: var(--azul-marinho);
       color: var(--branco);
       padding: 20px;
       text-align: center;
