@@ -9,6 +9,7 @@
       --azul: #00bfff;
       --preto: #111111;
       --branco: #ffffff;
+      --fundo-card: #f0faff;
     }
 
     * {
@@ -91,6 +92,11 @@
     }
 
     form {
+      background-color: var(--fundo-card);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -133,7 +139,7 @@
       <img src="logo.png" alt="Help X Solutions" class="logo">
       <a href="index.html">Início</a>
       <a href="quem-somos.html">Quem Somos</a>
-      <a href="produtos-digitais.html">Produtos Digitais</a>
+      <a href="produtos.html">Produtos Digitais</a>
       <a href="afiliacao.html">Afiliação</a>
       <a href="parceiros.html">Parceiros</a>
       <a href="contato.html">Contato</a>
@@ -142,20 +148,28 @@
 
   <section class="banner">
     <h1>Contato</h1>
-    <p>Entre em contato conosco para tirar dúvidas ou solicitar nossos serviços</p>
+    <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
   </section>
 
   <main>
-    <form>
-      <input type="text" placeholder="Nome completo" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe2RCPh34clmHKMwPJ_D1vwzuNOa-aHciOt1jnYfw829L1wOw/formResponse" method="POST" target="hidden_iframe" onsubmit="enviarMensagem();">
+      <input type="text" name="entry.528826968" placeholder="Nome" required>
+      <input type="email" name="entry.1365435878" placeholder="E-mail" required>
+      <input type="text" name="entry.544574965" placeholder="WhatsApp" required>
+      <textarea name="entry.2145508044" placeholder="Mensagem" rows="5" required></textarea>
       <button type="submit">Enviar</button>
     </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
   </main>
 
   <footer>
     &copy; 2025 Help X Solutions. Todos os direitos reservados.
   </footer>
+
+  <script>
+    function enviarMensagem() {
+      alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+    }
+  </script>
 </body>
 </html>
