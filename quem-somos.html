@@ -9,6 +9,7 @@
       --azul: #00bfff;
       --preto: #111111;
       --branco: #ffffff;
+      --fundo-card: #f0faff;
     }
 
     * {
@@ -35,9 +36,15 @@
       max-width: 1200px;
       margin: auto;
       display: flex;
+      align-items: center;
       justify-content: center;
       gap: 40px;
       padding: 20px;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 40px;
     }
 
     nav a {
@@ -79,20 +86,28 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
     }
 
-    main h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      text-align: center;
+    .card-afiliado {
+      background-color: var(--fundo-card);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
     }
 
-    main p {
+    .card-afiliado h2 {
+      text-align: center;
       margin-bottom: 20px;
+    }
+
+    .card-afiliado p {
       text-align: justify;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -107,6 +122,7 @@
 <body>
   <header>
     <nav>
+      <img src="logo.png" alt="Help X Solutions" class="logo">
       <a href="index.html">Início</a>
       <a href="quem-somos.html">Quem Somos</a>
       <a href="produtos.html">Produtos Digitais</a>
@@ -122,23 +138,30 @@
   </section>
 
   <main>
-    <h2>Nosso Propósito</h2>
-    <p>A Help X Solutions nasceu com o propósito de transformar a realidade de lojistas no e-commerce, oferecendo soluções acessíveis, inteligentes e personalizadas para alavancar suas vendas nos principais marketplaces.</p>
+    <div class="card-afiliado">
+      <h2>Nosso Propósito</h2>
+      <p>A Help X Solutions nasceu com o propósito de transformar a realidade de lojistas no e-commerce, oferecendo soluções acessíveis, inteligentes e personalizadas para alavancar suas vendas nos principais marketplaces.</p>
+      <p>Com uma equipe especializada e foco total em resultados, auxiliamos nossos clientes desde o cadastro de produtos até estratégias avançadas de precificação, campanhas e análise de performance.</p>
+    </div>
 
-    <p>Com uma equipe especializada e foco total em resultados, auxiliamos nossos clientes desde o cadastro de produtos até estratégias avançadas de precificação, campanhas e análise de performance.</p>
+    <div class="card-afiliado">
+      <h2>Missão</h2>
+      <p>Impulsionar o crescimento de e-commerces através de gestão eficiente, automações inteligentes e suporte completo, sempre com ética, agilidade e parceria.</p>
+    </div>
 
-    <h2>Missão</h2>
-    <p>Impulsionar o crescimento de e-commerces através de gestão eficiente, automações inteligentes e suporte completo, sempre com ética, agilidade e parceria.</p>
+    <div class="card-afiliado">
+      <h2>Visão</h2>
+      <p>Ser referência nacional em assessoria e consultoria para e-commerces, sendo reconhecida por nossa excelência em resultados, atendimento humano e soluções inovadoras.</p>
+    </div>
 
-    <h2>Visão</h2>
-    <p>Ser referência nacional em assessoria e consultoria para e-commerces, sendo reconhecida por nossa excelência em resultados, atendimento humano e soluções inovadoras.</p>
-
-    <h2>Valores</h2>
-    <p>- Ética e transparência em cada ação<br>
-       - Comprometimento com resultados<br>
-       - Inovação com simplicidade<br>
-       - Foco no sucesso do cliente<br>
-       - Respeito e colaboração com a equipe</p>
+    <div class="card-afiliado">
+      <h2>Valores</h2>
+      <p>- Ética e transparência em cada ação<br>
+         - Comprometimento com resultados<br>
+         - Inovação com simplicidade<br>
+         - Foco no sucesso do cliente<br>
+         - Respeito e colaboração com a equipe</p>
+    </div>
   </main>
 
   <footer>
