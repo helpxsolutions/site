@@ -1,7 +1,5 @@
-// script.js - Comportamentos dinâmicos do site Help X Solutions
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Menu Mobile Toggle
+document.addEventListener("DOMContentLoaded", () => {
+  // Menu mobile toggle
   const menuToggle = document.querySelector(".mobile-menu-toggle");
   const menu = document.querySelector(".menu");
 
@@ -11,39 +9,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Carrossel Automático
-  const carrosselContainers = document.querySelectorAll(".carousel-container");
-
-  carrosselContainers.forEach((container) => {
-    const slides = container.querySelectorAll(".slide");
-    const dotsContainer = container.querySelector(".dots");
+  // Galeria de imagens com troca automática
+  document.querySelectorAll('.galeria-imagens').forEach(galeria => {
     let index = 0;
+    const slides = galeria.querySelectorAll('.slide');
 
-    slides.forEach((_, i) => {
-      const dot = document.createElement("span");
-      dot.addEventListener("click", () => showSlide(i));
-      dotsContainer.appendChild(dot);
-    });
-
-    const dots = dotsContainer.querySelectorAll("span");
-
-    function showSlide(i) {
-      index = i;
-      container.querySelector(".slides").style.transform = `translateX(-${index * 100}%)`;
-
-      slides.forEach(slide => slide.classList.remove("active"));
-      dots.forEach(dot => dot.classList.remove("active"));
-      slides[index].classList.add("active");
-      dots[index].classList.add("active");
+    function mostrarSlide(i) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[i].classList.add('active');
     }
 
-    function nextSlide() {
+    mostrarSlide(index);
+
+    setInterval(() => {
       index = (index + 1) % slides.length;
-      showSlide(index);
-    }
+      mostrarSlide(index);
+    }, 4000);
+  });
 
-    showSlide(0);
-    setInterval(nextSlide, 5000);
+  // Botão de compra com redirecionamento
+  document.querySelectorAll(".botao").forEach(botao => {
+    botao.addEventListener("click", (e) => {
+      const url = botao.getAttribute("href") || botao.dataset.href;
+      if (url) {
+        window.open(url, '_blank');
+      }
+    });
   });
 });
-
