@@ -9,6 +9,7 @@
       --azul: #00bfff;
       --preto: #111111;
       --branco: #ffffff;
+      --fundo-card: #f0faff;
     }
 
     * {
@@ -90,25 +91,23 @@
       padding: 0 20px;
     }
 
-    main h2 {
-      text-align: center;
+    .card-afiliado {
+      background-color: var(--fundo-card);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       margin-bottom: 30px;
     }
 
-    .produto {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
+    .card-afiliado h2 {
+      text-align: center;
       margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
-    .produto h3 {
-      margin-bottom: 10px;
-    }
-
-    .produto p {
-      color: #333;
+    .card-afiliado p {
+      text-align: justify;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -135,25 +134,23 @@
 
   <section class="banner">
     <h1>Produtos Digitais</h1>
-    <p>Automatize seu negócio com soluções inteligentes</p>
+    <p>Automatize seu e-commerce com soluções inteligentes e práticas</p>
   </section>
 
   <main>
-    <h2>Nossos Produtos</h2>
-
-    <div class="produto">
-      <h3>Planilha de Precificação Automática</h3>
-      <p>Calcule lucros reais com base em custos, comissões, impostos e frete. Ideal para Shopee, Mercado Livre, Bagy e mais.</p>
+    <div class="card-afiliado">
+      <h2>Planilha de Precificação Automática</h2>
+      <p>Ferramenta avançada para calcular seu preço de venda ideal, considerando todos os custos, comissões, frete e impostos. Compatível com Shopee, Mercado Livre, Bagy e mais.</p>
     </div>
 
-    <div class="produto">
-      <h3>Integração Bling + Google Sheets</h3>
-      <p>Puxe estoque, notas fiscais, produtos e pedidos direto do Bling para o Google Sheets com automação.</p>
+    <div class="card-afiliado">
+      <h2>Integração Bling + Google Sheets</h2>
+      <p>Automatize consultas de estoque, notas fiscais, pedidos e produtos direto do Bling, atualizando suas planilhas sem precisar acessar o sistema.</p>
     </div>
 
-    <div class="produto">
-      <h3>Checklist de Cadastro de Produtos</h3>
-      <p>Garanta qualidade nos cadastros com verificação automática de informações essenciais em marketplaces.</p>
+    <div class="card-afiliado">
+      <h2>Checklist de Cadastro de Produtos</h2>
+      <p>Garanta a padronização das informações nos marketplaces com um checklist interativo que facilita a auditoria de cadastros e reduz erros manuais.</p>
     </div>
   </main>
 
