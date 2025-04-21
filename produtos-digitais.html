@@ -22,11 +22,12 @@
       flex-direction: row;
       gap: 20px;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
 
     .galeria-imagens,
     .video-produto {
-      flex: 1;
+      flex: 1 1 48%;
       min-width: 300px;
       max-width: 100%;
     }
@@ -48,6 +49,7 @@
       flex: 0 0 auto;
       max-width: 100%;
       max-height: 400px;
+      width: 100%;
       height: auto;
       border-radius: 12px;
       scroll-snap-align: center;
@@ -56,8 +58,10 @@
 
     .video-produto iframe {
       width: 100%;
+      height: auto;
       aspect-ratio: 16 / 9;
       border-radius: 12px;
+      display: block;
     }
 
     .descricao-produto {
@@ -104,6 +108,11 @@
       .produto-midias {
         flex-direction: column;
       }
+
+      .galeria-imagens,
+      .video-produto {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
@@ -130,19 +139,6 @@
     <h1>Produtos Digitais</h1>
     <p>Automatize seu e-commerce com ferramentas profissionais da Help X Solutions.</p>
   </section>
-
-  <!-- PRODUTOS CONTINUAM IGUAIS ABAIXO -->
-
-  <!-- (restante do conteúdo dos produtos continua igual ao anterior) -->
-</main>
-
-<footer>
-  <p>&copy; 2025 Help X Solutions. Todos os direitos reservados.</p>
-</footer>
-</body>
-</html>
-
-
     <section class="produto-card">
       <div class="produto-midias">
         <div class="galeria-imagens">
