@@ -9,26 +9,24 @@
   <meta property="og:description" content="Consultoria e assessoria em e-commerce, marketplaces e automações.">
   <meta property="og:image" content="logo-helpx.png">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: #00c6ff;
-      text-align: center;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      animation: backgroundFade 30s infinite alternate;
+      background-color: #000;
     }
-
     @keyframes backgroundFade {
       0% { background-image: url('bg1.jpg'); }
       50% { background-image: url('bg2.jpg'); }
       100% { background-image: url('bg3.jpg'); }
     }
-
     header {
       padding: 20px;
-      background-color: rgba(10, 10, 10, 0.8);
+      background-color: rgba(10, 10, 10, 0.95);
+      text-align: center;
       box-shadow: 0 2px 10px rgba(0, 198, 255, 0.2);
     }
     header img {
@@ -41,19 +39,53 @@
     }
     nav {
       margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
     }
     nav a {
-      margin: 0 15px;
       color: #00c6ff;
       text-decoration: none;
       font-weight: bold;
+      padding: 10px 15px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      transition: background 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #009ec4;
     }
     section {
-      padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+    section:nth-of-type(even) {
+      background-color: rgba(15, 15, 15, 0.85);
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    ul li {
+      padding: 8px 0;
+      font-size: 1.1em;
     }
     .btn-whatsapp {
       display: inline-block;
@@ -69,16 +101,21 @@
     .btn-whatsapp:hover {
       background-color: #009ec4;
     }
-    .section-dark {
-      background-color: rgba(15, 15, 15, 0.8);
-    }
     footer {
-      background-color: rgba(10, 10, 10, 0.9);
+      background-color: rgba(10, 10, 10, 0.95);
       padding: 20px;
       font-size: 0.9em;
       color: #666;
+      text-align: center;
     }
-    ul { list-style: none; padding: 0; }
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -106,7 +143,7 @@
     <a class="btn-whatsapp" href="https://wa.me/5511991702524" target="_blank">Fale conosco no WhatsApp</a>
   </section>
 
-  <section class="section-dark">
+  <section>
     <h2>Clientes Atendidos</h2>
     <p>Temos orgulho de atender lojistas de todo o Brasil, incluindo marcas como Lunii, Child and the Beagles, JS Veste, Penol Moda, Lorena Fashion, Curvy, Kroft e mais.</p>
   </section>
@@ -122,7 +159,7 @@
     </ul>
   </section>
 
-  <section class="section-dark">
+  <section>
     <h2>Portfólio</h2>
     <p>Conheça alguns dos projetos que executamos com foco em resultado. Entre em contato para ver mais detalhes e cases completos.</p>
   </section>
@@ -133,7 +170,7 @@
     <a class="btn-whatsapp" href="#">Ver produtos e ferramentas</a>
   </section>
 
-  <section id="afiliacao" class="section-dark">
+  <section id="afiliacao">
     <h2>Programa de Afiliados</h2>
     <p>Indique nossos serviços e produtos e ganhe comissões por cada venda. Ideal para criadores de conteúdo, freelancers e especialistas em e-commerce.</p>
     <a class="btn-whatsapp" href="#">Quero ser um afiliado</a>
@@ -144,7 +181,7 @@
     <p>Trabalhamos em conjunto com plataformas e profissionais de confiança para oferecer soluções completas: Bling, Bagy, Commo CRM, entre outros.</p>
   </section>
 
-  <section id="contato" class="section-dark">
+  <section id="contato">
     <h2>Contato</h2>
     <p>Quer saber como podemos ajudar sua loja? Clique abaixo para preencher nosso formulário ou nos chamar no WhatsApp.</p>
     <a class="btn-whatsapp" href="https://wa.me/5511991702524">Fale conosco</a>
@@ -153,9 +190,10 @@
   <footer>
     <p>&copy; 2025 Help X Solutions - CNPJ 55.786.601/0001-63</p>
     <p>Email: helpxsolutions@gmail.com | WhatsApp: (11) 99170-2524</p>
-    <p>Siga nas redes: 
-      <a href="https://www.instagram.com/gestaohelpx/" target="_blank">Instagram</a>
-       </p>
+    <p>Siga nas redes:
+      <a href="https://www.instagram.com/gestaohelpx/" target="_blank">Instagram</a> |
+     
+    </p>
   </footer>
 </body>
 </html>
