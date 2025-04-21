@@ -1,4 +1,127 @@
-<!-- Início do Carrossel -->
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Help X Solutions</title>
+   <style>
+     :root {
+       --azul: #00bfff;
+       --preto: #111111;
+       --cinza-claro: #f2f2f2;
+       --branco: #ffffff;
+     }
+ 
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Poppins', Arial, sans-serif;
+     }
+ 
+     body {
+       background: var(--branco);
+       color: var(--preto);
+       line-height: 1.6;
+     }
+ 
+     header {
+       background: var(--branco);
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+     }
+ 
+     nav {
+       max-width: 1200px;
+       margin: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 40px;
+       padding: 20px;
+     }
+ 
+     .logo {
+       height: 40px;
+       margin-right: 40px;
+     }
+ 
+     nav a {
+       text-decoration: none;
+       color: var(--preto);
+       font-weight: 500;
+       position: relative;
+     }
+ 
+     nav a::after {
+       content: '';
+       position: absolute;
+       width: 0;
+       height: 2px;
+       background: var(--azul);
+       left: 0;
+       bottom: -5px;
+       transition: width 0.3s;
+     }
+ 
+     nav a:hover::after {
+       width: 100%;
+     }
+ 
+     .banner {
+       background: linear-gradient(to right, #e0f7ff, #ffffff);
+       padding: 80px 20px;
+       text-align: center;
+     }
+ 
+     .banner h1 {
+       font-size: 2.8rem;
+       color: var(--preto);
+       margin-bottom: 10px;
+     }
+ 
+     .banner p {
+       font-size: 1.2rem;
+       color: #333;
+     }
+ 
+     main {
+       max-width: 1000px;
+       margin: 60px auto;
+       padding: 0 20px;
+       text-align: center;
+     }
+ 
+     main h2 {
+       font-size: 2rem;
+       margin-bottom: 20px;
+     }
+ 
+     footer {
+       background: var(--preto);
+       color: var(--branco);
+       padding: 20px;
+       text-align: center;
+       font-size: 0.9rem;
+     }
+   </style>
+ </head>
+ <body>
+   <header>
+     <nav>
+       <img src="logo.png" alt="Help X Solutions" class="logo">
+       <a href="index.html">Início</a>
+       <a href="quem-somos.html">Quem Somos</a>
+       <a href="produtos-digitais.html">Produtos Digitais</a>
+       <a href="afiliacao.html">Afiliação</a>
+       <a href="parceiros.html">Parceiros</a>
+       <a href="contato.html">Contato</a>
+     </nav>
+   </header>
+   
+   <!-- Início do Carrossel -->
 <section class="carousel">
   <div class="carousel-inner">
     <div class="carousel-slide active"><img src="img/banner1.jpg" alt="Banner 1"></div>
@@ -12,3 +135,22 @@
   </div>
 </section>
 <!-- Fim do Carrossel -->
+
+ 
+   <section class="banner">
+     <h1>Help X Solutions</h1>
+     <p>Transformamos e-commerces em máquinas de vendas!</p>
+   </section>
+ 
+   <main>
+     <h2>Bem-vindo ao nosso novo site</h2>
+     <p>A Help X Solutions é uma empresa especializada em automação, assessoria e consultoria para e-commerces e marketplaces. Atuamos com foco em performance, utilizando tecnologia e inteligência de dados para otimizar vendas, campanhas e operações.</p>
+ 
+     <p>Nosso propósito é simplificar o dia a dia do lojista, potencializando resultados através de soluções personalizadas que integram marketplaces, ERPs como o Bling, e ferramentas de análise e gestão comercial.</p>
+   </main>
+ 
+   <footer>
+     &copy; 2025 Help X Solutions. Todos os direitos reservados.
+   </footer>
+ </body>
+ </html>
