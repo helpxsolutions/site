@@ -28,6 +28,7 @@
     .video-produto {
       flex: 1;
       min-width: 300px;
+      max-width: 100%;
     }
 
     .slides {
@@ -44,18 +45,18 @@
     }
 
     .slide {
-      flex: 0 0 100%;
+      flex: 0 0 auto;
       max-width: 100%;
+      max-height: 400px;
       height: auto;
       border-radius: 12px;
       scroll-snap-align: center;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     .video-produto iframe {
       width: 100%;
-      height: 100%;
-      min-height: 200px;
+      aspect-ratio: 16 / 9;
       border-radius: 12px;
     }
 
@@ -107,28 +108,40 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="nav-bar">
-      <img src="img/logo.png" alt="Help X Solutions" class="logo" />
-      <button class="mobile-menu-toggle" aria-label="Abrir menu">
-        <span class="menu-icon"></span>
-      </button>
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="quem-somos.html">Quem Somos</a></li>
-        <li><a href="produtos-digitais.html" class="active">Produtos Digitais</a></li>
-        <li><a href="afiliacao.html">Afiliação</a></li>
-        <li><a href="parceiros.html">Parceiros</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav class="nav-bar">
+    <img src="img/logo.png" alt="Help X Solutions" class="logo" />
+    <button class="mobile-menu-toggle" aria-label="Abrir menu">
+      <span class="menu-icon"></span>
+    </button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="produtos-digitais.html" class="active">Produtos Digitais</a></li>
+      <li><a href="afiliacao.html">Afiliação</a></li>
+      <li><a href="parceiros.html">Parceiros</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section class="intro">
-      <h1>Produtos Digitais</h1>
-      <p>Automatize seu e-commerce com ferramentas profissionais da Help X Solutions.</p>
-    </section>
+<main>
+  <section class="intro">
+    <h1>Produtos Digitais</h1>
+    <p>Automatize seu e-commerce com ferramentas profissionais da Help X Solutions.</p>
+  </section>
+
+  <!-- PRODUTOS CONTINUAM IGUAIS ABAIXO -->
+
+  <!-- (restante do conteúdo dos produtos continua igual ao anterior) -->
+</main>
+
+<footer>
+  <p>&copy; 2025 Help X Solutions. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
+
 
     <section class="produto-card">
       <div class="produto-midias">
