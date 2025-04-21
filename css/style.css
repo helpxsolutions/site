@@ -120,11 +120,15 @@ header {
 }
 
 .slide {
+  display: none;
   width: 100%;
-  flex-shrink: 0;
-  height: 300px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
 }
+
 
 .dots {
   position: absolute;
