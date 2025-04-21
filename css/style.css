@@ -3,6 +3,7 @@
   --branco: #ffffff;
   --preto: #000000;
   --azul-marinho:#004aad;
+  --fundo-card: #f0faff;
 }
 
 body {
@@ -264,7 +265,7 @@ body {
 
 
 .footer {
-      background: var(--azul-marinho);
+      background: var(--fundo-card);
       color: var(--branco);
       padding: 20px;
       text-align: center;
