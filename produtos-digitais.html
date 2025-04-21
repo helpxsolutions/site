@@ -35,15 +35,21 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 10px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .slides::-webkit-scrollbar {
+      display: none;
     }
 
     .slide {
-      width: 100%;
+      flex: 0 0 100%;
       max-width: 100%;
       height: auto;
       border-radius: 12px;
-      scroll-snap-align: start;
-      flex-shrink: 0;
+      scroll-snap-align: center;
+      object-fit: cover;
     }
 
     .video-produto iframe {
@@ -112,7 +118,6 @@
             <img src="img/produto1b.jpg" alt="Produto 1" class="slide" />
             <img src="img/produto1c.jpg" alt="Produto 1" class="slide" />
           </div>
-          <div class="dots"></div>
         </div>
         <div class="video-produto">
           <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Apresentação do Produto" frameborder="0" allowfullscreen></iframe>
@@ -134,7 +139,6 @@
             <img src="img/produto2b.jpg" alt="Produto 2" class="slide" />
             <img src="img/produto2c.jpg" alt="Produto 2" class="slide" />
           </div>
-          <div class="dots"></div>
         </div>
         <div class="video-produto">
           <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" title="Apresentação do Produto" frameborder="0" allowfullscreen></iframe>
