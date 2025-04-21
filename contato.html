@@ -4,33 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Help X Solutions</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --azul: #00bfff;
+      --preto: #111111;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+      background: var(--branco);
+      color: var(--preto);
+    }
+
+    header {
+      background: var(--branco);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--preto);
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--azul);
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .banner {
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 10px;
+      background-color: var(--azul);
+      color: var(--branco);
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #009acd;
+    }
+
+    footer {
+      background: var(--preto);
+      color: var(--branco);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo-helpx.png" alt="Help X Solutions Logo">
-    <h1>Fale Conosco</h1>
+    <nav>
+      <img src="logo.png" alt="Help X Solutions" class="logo">
+      <a href="index.html">Início</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="produtos.html">Produtos Digitais</a>
+      <a href="afiliacao.html">Afiliação</a>
+      <a href="parceiros.html">Parceiros</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="quemsomos.html">Quem Somos</a>
-    <a href="produtos.html">Produtos Digitais</a>
-    <a href="afiliacao.html">Afiliação</a>
-    <a href="parceiros.html">Parceiros</a>
-  </nav>
-  <section>
-    <h2>Entre em contato</h2>
-    <p>Quer saber como podemos ajudar sua loja? Envie uma mensagem para nosso WhatsApp clicando no botão abaixo:</p>
-    <a class="btn-whatsapp" href="https://wa.me/5511991702524" target="_blank">Fale conosco no WhatsApp</a>
-    <p>Ou, se preferir, envie um email para: <strong>helpxsolutions@gmail.com</strong></p>
+
+  <section class="banner">
+    <h1>Contato</h1>
+    <p>Entre em contato conosco para tirar dúvidas ou solicitar nossos serviços</p>
   </section>
+
+  <main>
+    <form>
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Help X Solutions - CNPJ 55.786.601/0001-63</p>
-    <p>Email: helpxsolutions@gmail.com | WhatsApp: (11) 99170-2524</p>
-    <p>Siga nas redes:
-      <a href="https://www.instagram.com/gestaohelpx/" target="_blank">Instagram</a>
-    </p>
+    &copy; 2025 Help X Solutions. Todos os direitos reservados.
   </footer>
 </body>
 </html>
-
