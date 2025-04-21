@@ -186,3 +186,32 @@ body {
     padding: 8px 16px;
   }
 }
+
+
+.descricao-produto p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.descricao-produto.expanded p {
+  display: block;
+}
+
+.ver-mais {
+  display: block;
+  margin: 10px auto 0;
+  background: none;
+  border: none;
+  color: var(--azul);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.preco,
+.botao {
+  text-align: center;
+}
