@@ -189,20 +189,25 @@ body {
 
 .preco,
 .botao {
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  display: inline-block;
   text-align: center;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #0099cc;
 }
 
 .preco {
   font-size: 1.1rem;
   margin: 10px 0;
-}
-
-.botao {
-  display: inline-block;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
