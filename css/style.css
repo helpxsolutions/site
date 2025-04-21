@@ -250,3 +250,13 @@ body {
   text-align: center;
   font-weight: bold;
 }
+
+
+
+    footer {
+      background: var(--preto);
+      color: var(--branco);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
