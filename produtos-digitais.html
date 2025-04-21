@@ -8,115 +8,34 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-  <nav class="nav-bar">
-    <div class="brand">
-      <img src="img/logo.png" alt="Help X Solutions" class="logo" />
-      Help X Solutions
-    </div>
-    <button class="mobile-menu-toggle" aria-label="Abrir menu">
-      <span class="menu-icon"></span>
-    </button>
-    <ul class="menu">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="quem-somos.html">Quem Somos</a></li>
-      <li><a href="produtos-digitais.html" class="active">Produtos Digitais</a></li>
-      <li><a href="afiliacao.html">Afiliação</a></li>
-      <li><a href="parceiros.html">Parceiros</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section class="intro">
-    <h1>Produtos Digitais</h1>
-    <p>Automatize seu e-commerce com ferramentas profissionais da Help X Solutions.</p>
-  </section>
-    <section class="produto-card">
-      <div class="produto-midias">
-        <div class="galeria-imagens">
-          <div class="slides">
-            <img src="img/produto1a.jpg" alt="Produto 1" class="slide active" />
-            <img src="img/produto1b.jpg" alt="Produto 1" class="slide" />
-            <img src="img/produto1c.jpg" alt="Produto 1" class="slide" />
-          </div>
-        </div>
-        <div class="video-produto">
-          <iframe src="https://www.youtube.com/embed/mCSpYNVqHfM" title="Apresentação do Produto" frameborder="0" allowfullscreen></iframe>
+  <section class="produto-card">
+    <div class="produto-midias">
+      <div class="galeria-imagens">
+        <div class="slides">
+          <img src="img/produto1a.jpg" alt="Produto 1" class="slide active" />
+          <img src="img/produto1b.jpg" alt="Produto 1" class="slide" />
+          <img src="img/produto1c.jpg" alt="Produto 1" class="slide" />
         </div>
       </div>
+      <div class="video-produto">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Apresentação do Produto" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
 
-      <div class="descricao-produto">
-        <h2>Planilha de Precificação Automática</h2>
-        <p>Ferramenta desenvolvida para calcular o preço ideal de venda com base em todos os custos envolvidos: produto, impostos, comissão, frete e margem de lucro. Ideal para quem vende em Shopee, Mercado Livre, Bagy, Amazon e outros marketplaces.</p>
-        <div class="preco">
-          <span class="de">De: R$ 99,00</span>
-          <span class="por">Por: R$ 59,00</span>
-        </div>
+    <div class="descricao-produto">
+      <h2>Planilha de Precificação Automática</h2>
+      <div class="preco">
+        <span class="de">De: R$ 99,00</span>
+        <span class="por">Por: R$ 59,00</span>
+      </div>
+      <div style="text-align: center;">
         <a href="https://pagamento.sejaefi.com.br/EXEMPLO1" class="botao" target="_blank">Comprar</a>
       </div>
-    </section>
-
-    <section class="produto-card">
-      <div class="produto-midias">
-        <div class="galeria-imagens">
-          <div class="slides">
-            <img src="img/produto2a.jpg" alt="Produto 2" class="slide active" />
-            <img src="img/produto2b.jpg" alt="Produto 2" class="slide" />
-            <img src="img/produto2c.jpg" alt="Produto 2" class="slide" />
-          </div>
-        </div>
-        <div class="video-produto">
-          <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_2" title="Apresentação do Produto" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="descricao-produto">
-        <h2>Integração Bling + Google Sheets</h2>
-        <p>Automatize sua gestão com uma solução que conecta o Bling diretamente ao Google Sheets. Realize atualizações de estoque, notas fiscais, produtos e pedidos de forma automática, ganhando agilidade e segurança no controle de seu e-commerce.</p>
-        <div class="preco">
-          <span class="de">De: R$ 450,00</span>
-          <span class="por">Por: R$ 250,00</span>
-        </div>
-        <a href="https://pagamento.sejaefi.com.br/EXEMPLO2" class="botao" target="_blank">Comprar</a>
-      </div>
-    </section>
-  </main>
-
-<footer>
-  <p>&copy; 2025 Help X Solutions. Todos os direitos reservados.</p>
-</footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // menu mobile toggle
-    const menuToggle = document.querySelector(".mobile-menu-toggle");
-    const menu = document.querySelector(".menu");
-
-    if (menuToggle) {
-      menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("open");
-      });
-    }
-
-    document.querySelectorAll('.galeria-imagens').forEach(galeria => {
-      let index = 0;
-      const slides = galeria.querySelectorAll('.slide');
-
-      function mostrarSlide(i) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[i].classList.add('active');
-      }
-
-      mostrarSlide(index);
-
-      setInterval(() => {
-        index = (index + 1) % slides.length;
-        mostrarSlide(index);
-      }, 4000);
-    });
-  });
-</script>
+      <p>
+        Ferramenta desenvolvida para calcular o preço ideal de venda com base em todos os custos envolvidos: produto, impostos, comissão, frete e margem de lucro. Ideal para quem vende em Shopee, Mercado Livre, Bagy, Amazon e outros marketplaces. Com layout intuitivo e editável, é possível configurar regras para cada canal de venda, aplicar promoções e simular lucros por produto ou por pedido com praticidade.
+      </p>
+      <button class="ver-mais">Ver mais</button>
+    </div>
+  </section>
 </body>
 </html>
