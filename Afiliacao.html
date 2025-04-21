@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afiliação - Help X Solutions</title>
+  <title>Quem Somos - Help X Solutions</title>
   <style>
     :root {
       --azul: #00bfff;
       --preto: #111111;
       --branco: #ffffff;
+      --fundo-card: #f0faff;
     }
 
     * {
@@ -90,32 +91,23 @@
       padding: 0 20px;
     }
 
-    main h2 {
+    .bloco {
+      background-color: var(--fundo-card);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .bloco h2 {
       text-align: center;
       margin-bottom: 20px;
     }
 
-    main p {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .botao {
-      display: block;
-      width: max-content;
-      margin: 0 auto;
-      padding: 10px 20px;
-      background-color: var(--azul);
-      color: var(--branco);
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .botao:hover {
-      background-color: #009acd;
+    .bloco p {
+      text-align: justify;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -141,15 +133,35 @@
   </header>
 
   <section class="banner">
-    <h1>Afiliação</h1>
-    <p>Ganhe comissões indicando nossos produtos digitais</p>
+    <h1>Quem Somos</h1>
+    <p>Conheça a essência por trás da Help X Solutions</p>
   </section>
 
   <main>
-    <h2>Seja um Afiliado</h2>
-    <p>Participe do nosso programa de afiliados e receba comissões por cada venda gerada através do seu link personalizado.</p>
-    <p>É simples, gratuito e pode gerar uma nova fonte de renda recorrente.</p>
-    <a href="https://shopee.com.br/estrela.brilha.oficial" class="botao" target="_blank">Acessar Perfil de Afiliado</a>
+    <div class="bloco">
+      <h2>Nosso Propósito</h2>
+      <p>A Help X Solutions nasceu com o propósito de transformar a realidade de lojistas no e-commerce, oferecendo soluções acessíveis, inteligentes e personalizadas para alavancar suas vendas nos principais marketplaces.</p>
+      <p>Com uma equipe especializada e foco total em resultados, auxiliamos nossos clientes desde o cadastro de produtos até estratégias avançadas de precificação, campanhas e análise de performance.</p>
+    </div>
+
+    <div class="bloco">
+      <h2>Missão</h2>
+      <p>Impulsionar o crescimento de e-commerces através de gestão eficiente, automações inteligentes e suporte completo, sempre com ética, agilidade e parceria.</p>
+    </div>
+
+    <div class="bloco">
+      <h2>Visão</h2>
+      <p>Ser referência nacional em assessoria e consultoria para e-commerces, sendo reconhecida por nossa excelência em resultados, atendimento humano e soluções inovadoras.</p>
+    </div>
+
+    <div class="bloco">
+      <h2>Valores</h2>
+      <p>- Ética e transparência em cada ação<br>
+         - Comprometimento com resultados<br>
+         - Inovação com simplicidade<br>
+         - Foco no sucesso do cliente<br>
+         - Respeito e colaboração com a equipe</p>
+    </div>
   </main>
 
   <footer>
