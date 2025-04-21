@@ -130,6 +130,7 @@ body {
 .video-produto {
   flex: 1 1 48%;
   min-width: 300px;
+  position: relative;
 }
 
 .slides {
@@ -141,7 +142,7 @@ body {
 .slide {
   display: none;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   max-height: 400px;
   object-fit: contain;
   border-radius: 12px;
@@ -149,6 +150,33 @@ body {
 
 .slide.active {
   display: block;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 12px 18px;
+  z-index: 2;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.seta:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.seta.esquerda {
+  left: 10px;
+}
+
+.seta.direita {
+  right: 10px;
 }
 
 .video-produto iframe {
@@ -204,7 +232,6 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
 }
