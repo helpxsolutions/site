@@ -33,27 +33,22 @@
     }
 
     .slides {
+      position: relative;
       display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-
-    .slides::-webkit-scrollbar {
-      display: none;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 12px;
     }
 
     .slide {
-      flex: 0 0 auto;
-      max-width: 100%;
-      max-height: 400px;
+      display: none;
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      scroll-snap-align: center;
       object-fit: contain;
+    }
+
+    .slide.active {
+      display: block;
     }
 
     .video-produto iframe {
@@ -190,8 +185,29 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Help X Solutions. Todos os direitos reservados.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Help X Solutions. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.galeria-imagens').forEach(galeria => {
+      let index = 0;
+      const slides = galeria.querySelectorAll('.slide');
+
+      function mostrarSlide(i) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[i].classList.add('active');
+      }
+
+      mostrarSlide(index);
+
+      setInterval(() => {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+      }, 4000);
+    });
+  });
+</script>
 </body>
 </html>
