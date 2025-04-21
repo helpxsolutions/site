@@ -5,131 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Help X Solutions</title>
   <style>
+    :root {
+      --azul: #00bfff;
+      --preto: #111111;
+      --cinza-claro: #f2f2f2;
+      --branco: #ffffff;
+    }
+
     * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', Arial, sans-serif;
     }
+
+    body {
+      background: var(--branco);
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
     header {
-      background-color: #f1f1f1;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 2px solid #ccc;
+      background: var(--branco);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    header img {
-      max-width: 160px;
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--preto);
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--azul);
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .banner {
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.8rem;
+      color: var(--preto);
       margin-bottom: 10px;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
-      color: #000;
+
+    .banner p {
+      font-size: 1.2rem;
+      color: #333;
     }
-    header p {
-      color: #555;
-    }
-    nav {
-      background-color: #e9e9e9;
-      padding: 10px 0;
+
+    main {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
       text-align: center;
     }
-    nav a {
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-      padding: 10px 15px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #d4d4d4;
-      border-radius: 5px;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2em;
-      color: #000;
-      margin-bottom: 20px;
-    }
-    p, ul li {
-      font-size: 1.1em;
-      color: #444;
-      line-height: 1.6em;
-    }
-    ul {
-      text-align: left;
-      max-width: 700px;
-      margin: auto;
-      padding: 0;
-      list-style: none;
-    }
-    ul li::before {
-      content: "\2713\0020";
-      color: #00c6ff;
-    }
-    .btn-whatsapp {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      background-color: #00c6ff;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn-whatsapp:hover {
-      background-color: #009ec4;
-    }
+
     footer {
-      background-color: #f9f9f9;
+      background: var(--preto);
+      color: var(--branco);
       padding: 20px;
       text-align: center;
-      font-size: 0.9em;
-      color: #666;
-    }
-    footer a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 5px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-helpx.png" alt="Help X Solutions Logo">
-    <h1>Help X Solutions</h1>
-    <p>Assessoria e Consultoria para E-commerce & Marketplaces</p>
+    <nav>
+      <a href="index.html">Quem Somos</a>
+      <a href="produtos.html">Produtos Digitais</a>
+      <a href="afiliacao.html">Afiliação</a>
+      <a href="parceiros.html">Parceiros</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="quemsomos.html">Quem Somos</a>
-    <a href="produtos.html">Produtos Digitais</a>
-    <a href="afiliacao.html">Afiliação</a>
-    <a href="parceiros.html">Parceiros</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section>
-    <h2>Bem-vindo à Help X Solutions</h2>
-    <p>Navegue pelo menu acima para conhecer melhor nossos serviços, produtos e soluções.</p>
+  <section class="banner">
+    <h1>Help X Solutions</h1>
+    <p>Transformamos e-commerces em máquinas de vendas!</p>
   </section>
 
+  <main>
+    <h2>Bem-vindo ao nosso novo site</h2>
+    <p>Explore nossos serviços, soluções digitais e oportunidades de parceria.</p>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Help X Solutions - CNPJ 55.786.601/0001-63</p>
-    <p>Email: helpxsolutions@gmail.com | WhatsApp: (11) 99170-2524</p>
-    <p>Siga nas redes:
-      <a href="https://www.instagram.com/gestaohelpx/" target="_blank">Instagram</a>
-    </p>
+    &copy; 2025 Help X Solutions. Todos os direitos reservados.
   </footer>
 </body>
 </html>
