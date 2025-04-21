@@ -9,6 +9,7 @@
       --azul: #00bfff;
       --preto: #111111;
       --branco: #ffffff;
+      --fundo-card: #f0faff;
     }
 
     * {
@@ -88,26 +89,33 @@
       max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
+    }
+
+    .card-afiliado {
+      background-color: var(--fundo-card);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
       text-align: center;
     }
 
-    .card-parceiro {
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .card-parceiro h3 {
+    .card-afiliado h2 {
       margin-bottom: 10px;
     }
 
-    .card-parceiro a {
-      color: var(--azul);
-      text-decoration: none;
+    .card-afiliado p {
+      margin-bottom: 10px;
     }
 
-    .card-parceiro a:hover {
+    .card-afiliado a {
+      color: var(--azul);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card-afiliado a:hover {
       text-decoration: underline;
     }
 
@@ -126,8 +134,8 @@
       <img src="logo.png" alt="Help X Solutions" class="logo">
       <a href="index.html">Início</a>
       <a href="quem-somos.html">Quem Somos</a>
-      <a href="produtos-digitais.html">Produtos Digitais</a>
-      <a href="Afiliacao.html">Afiliação</a>
+      <a href="produtos.html">Produtos Digitais</a>
+      <a href="afiliacao.html">Afiliação</a>
       <a href="parceiros.html">Parceiros</a>
       <a href="contato.html">Contato</a>
     </nav>
@@ -139,20 +147,20 @@
   </section>
 
   <main>
-    <div class="card-parceiro">
-      <h3>Bagy</h3>
+    <div class="card-afiliado">
+      <h2>Bagy</h2>
       <p>Plataforma para criação de lojas virtuais modernas e responsivas.</p>
       <a href="https://www.bagy.com.br" target="_blank">Conhecer</a>
     </div>
 
-    <div class="card-parceiro">
-      <h3>Commo CRM</h3>
+    <div class="card-afiliado">
+      <h2>Commo CRM</h2>
       <p>Gestão de relacionamento com clientes e automação de atendimento.</p>
       <a href="https://www.commo.io" target="_blank">Conhecer</a>
     </div>
 
-    <div class="card-parceiro">
-      <h3>EFÍ Bank</h3>
+    <div class="card-afiliado">
+      <h2>EFÍ Bank</h2>
       <p>Emissor de boletos e soluções de pagamento para empreendedores.</p>
       <a href="https://www.sejaefi.com.br" target="_blank">Conhecer</a>
     </div>
