@@ -4,132 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quem Somos - Help X Solutions</title>
-  <style>
-    :root {
-      --azul: #00bfff;
-      --preto: #111111;
-      --branco: #ffffff;
-      --fundo-card: #f0faff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', Arial, sans-serif;
-    }
-
-    body {
-      background: var(--branco);
-      color: var(--preto);
-    }
-
-    header {
-      background: var(--branco);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      padding: 20px;
-    }
-
-    .logo {
-      height: 40px;
-      margin-right: 40px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--preto);
-      font-weight: 500;
-      position: relative;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: var(--azul);
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    .banner {
-      background: linear-gradient(to right, #e0f7ff, #ffffff);
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .banner h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .banner p {
-      font-size: 1.1rem;
-      color: #333;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .card-afiliado {
-      background-color: var(--fundo-card);
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-bottom: 30px;
-    }
-
-    .card-afiliado h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .card-afiliado p {
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background: var(--preto);
-      color: var(--branco);
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/quem-somos-final.css">
 </head>
 <body>
-  <header>
-    <nav>
+  <header class="nav-bar">
+    <div class="brand">
       <img src="logo.png" alt="Help X Solutions" class="logo">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="produtos-digitais.html">Produtos Digitais</a>
-      <a href="afiliacao.html">Afiliação</a>
-      <a href="parceiros.html">Parceiros</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+      Help X Solutions
+    </div>
+    <button class="mobile-menu-toggle">
+      <span class="menu-icon"></span>
+    </button>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="produtos-digitais.html">Produtos Digitais</a></li>
+      <li><a href="afiliacao.html">Afiliação</a></li>
+      <li><a href="parceiros.html">Parceiros</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
   </header>
 
   <section class="banner">
@@ -137,7 +30,7 @@
     <p>Conheça a essência por trás da Help X Solutions</p>
   </section>
 
-  <main>
+  <main class="produto-card">
     <div class="card-afiliado">
       <h2>Nosso Propósito</h2>
       <p>A Help X Solutions nasceu com o propósito de transformar a realidade de lojistas no e-commerce, oferecendo soluções acessíveis, inteligentes e personalizadas para alavancar suas vendas nos principais marketplaces.</p>
@@ -156,18 +49,20 @@
 
     <div class="card-afiliado">
       <h2>Valores</h2>
-      <p>- Ética e transparência em cada ação<br>
-         - Comprometimento com resultados<br>
-         - Inovação com simplicidade<br>
-         - Foco no sucesso do cliente<br>
-         - Respeito e colaboração com a equipe</p>
+      <p>
+        - Ética e transparência em cada ação<br>
+        - Comprometimento com resultados<br>
+        - Inovação com simplicidade<br>
+        - Foco no sucesso do cliente<br>
+        - Respeito e colaboração com a equipe
+      </p>
     </div>
   </main>
 
-   <div class="footer">
-  <footer>
+  <footer class="footer">
     &copy; 2025 Help X Solutions. Todos os direitos reservados.
   </footer>
-  </div>
+
+  <script src="js/quem-somos.js" defer></script>
 </body>
 </html>
