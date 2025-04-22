@@ -69,3 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card-afiliado");
+
+  // Aplica apenas para mobile
+  if (window.innerWidth <= 768) {
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("active");
+      });
+    });
+  }
+});
